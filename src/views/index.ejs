@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('partials/_head.ejs') %>
+        <title>
+            <%=title%>
+        </title>
+        <link rel="stylesheet" href="scss/index.css">
+</head>
+
+<body>
+    <%- include('partials/_nav.ejs') %>
+
+        <br>
+        <h2>START YOUR OWN POKEDEX TRAVEL HERE!</h2>
+        <!-- Carousel -->
+        <img src="images/pokedex.png" alt="">
+        <hr>
+        <br>
+
+        <!--Carousel-->
+        <div id="carouselExampleFade" class="carousel slide bg-warning" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/imgComps/firered.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/imgComps/firered.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/imgComps/firered.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"></span>
+            </a>
+        </div>
+
+
+        <%- include('partials/_btjs.ejs') %>
+</body>
+
+</html>
